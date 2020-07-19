@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'dev') {
 } else {
 
     try {
-        urlDB = 'mongodb+srv://edicruz9813:pxZFji02c9iaq8h4@cluster0.x22n7.mongodb.net/cafe?retryWrites=true&w=majority';
+        urlDB = process.env.MONGO_URI;
     } catch (error) {
         console.log(error);
     }
