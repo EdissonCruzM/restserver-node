@@ -1,8 +1,6 @@
 const uniqueValidator = require('mongoose-unique-validator');
 const mongoose = require('mongoose');
 
-
-
 let rolesValidos = {
     values: ['ADMIN_ROLES', 'USER_ROLE'],
     message: '{VALUE} no es un role valido.'
